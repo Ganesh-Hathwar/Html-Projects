@@ -1,0 +1,117 @@
+@media(width:300px){
+    *{
+      width:30px;
+    }
+  }
+  ::marker {
+      unicode-bidi: isolate;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+      text-indent: 0px !important;
+      text-align: start !important;
+      text-align-last: start !important;
+  }
+  #main-doc{
+    position:absolute;
+    margin-left:310px;
+    padding:20px;
+    margin-right:110px;
+  }
+  html,body{
+    min-width:290px;
+    color:black;
+    font-family:'Open Sans', Arial, sans-serif;
+    line-height:1.5;
+  }
+  .bg-image{
+   position:fixed;
+   left:0px;
+   top:0px;
+   z-index:-1;
+   width:100%;
+   height:100%;
+  -webkit-filter:blur(2px);
+  filter:blur(2px);
+  }
+  .nav{
+    display:block;
+  }
+  #navbar {
+      position: fixed;
+      min-width: 290px;
+      top: 0px;
+      left: 0px;
+      width: 300px;
+      height: 100%;
+      border-right: solid;
+      display:block;
+      opacity:80%;
+      border-color: rgba(0, 22, 22, 0.4);
+  }
+  #navbar ul{
+    height:88%;
+    padding:0;
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+  #navbar li{
+    border:1px solid;
+    list-style:none;
+    position:relative;
+    width:100%;
+  }
+  header {
+      color: black;
+      margin: 10px;
+      text-align: left;
+      font-size: 2em;
+      font-weight: thin;
+  }
+  .section li{
+    margin:15px 0px 0px 20px;
+  }
+  li{
+    display: list-items;
+    text-align: -webkit-match-parent;
+  }
+  ul{
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+  }
+  .section article{
+    color:black;
+    margin:15px;
+    font-size:0.96px;
+  }
+  #navbar a{
+    display:block;
+    padding:10px 30px;
+    color:black;
+    text-decoration:none;
+    cursor:pointer;
+  }
+  code{
+    display:block;
+    text-align:left;
+    white-space:pre-line;
+    position:relative;
+    word-break:normal;
+    word-wrap:normal;
+    line-height:2;
+    background-color:rgb(0, 0, 0,0.6);
+    color:white;
+    padding:15px;
+    margin:10px;
+    width:50%;
+    border-radius:40px;
+  }
+  ul ul {
+      list-style-type: circle;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+  }

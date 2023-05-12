@@ -1,0 +1,120 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image:  url(https://th.bing.com/th/id/R.f5217ec4638aab4e8cb4680e5c940097?rik=OLOvhHa7wos82Q&riu=http%3a%2f%2fcsshint.com%2fwp-content%2fuploads%2f2020%2f01%2fCSS-Animated-Backgrounds.gif&ehk=3vlQwshXrF8kdyTvUoZeqbfzZ3wqGNA54NAu6f9S1OI%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 480px){
+form {
+    padding: 2.5rem;
+}
+}
+.text-center{
+    text-align:center;
+    
+}
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    display:block;
+    margin-top:0em;
+    margin:0 auto;
+    max-width:700px;
+    min-width:300px;
+}
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+
+}
+div {
+    display: block;
+}
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+.input-checkbox{
+    display:flex;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+.submit-button {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff7576;
+  background-color: #2B3044;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  line-height: 24px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px #2B3044,
+    0px 4px 16px #2B3044;
+  transform-style: preserve-3d;
+  transform: scale(var(--s, 1)) perspective(600px)
+    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  perspective: 600px;
+  transition: transform 0.1s;
+  text-align:center;
+  margin:0 auto;
+}
+
+.sb-button {
+  background: linear-gradient(
+      90deg,
+      #866ee7,
+      #ea60da,
+      #ed8f57,
+      #fbd41d,
+      #2cca91
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  text-align:center;
+  margin:0 auto;
+}
+
+.submit-button:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}
